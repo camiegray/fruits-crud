@@ -9,8 +9,10 @@
     <h1>All Fruits</h1>
     <ul>
       <% fruits.forEach(fruit => { %>
-        <li><%= fruit.name %></li>
+        <li><a href="/fruits/<%= fruit.id %><%= fruit.name %></li>
       <% }); %>
     </ul>
+    <a href="/fruits/new">Add a new Fruit</a>
+    <a href="/">Go Home</a>
   </body>
 </html>
